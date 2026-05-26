@@ -3,7 +3,7 @@
 Welcome! This repo contains everything you need to follow along with the **two-day MCP workshop**.
 
 - **Day 1** — Theory + plugging in two existing MCP servers (one remote, one local)
-- **Day 2** — Plugging in two more MCPs and then **vibe-coding your own** by prompting Claude Code
+- **Day 2** — **Vibe-code your own MCP** that wraps a real-world API (the [Alpha Vantage](https://www.alphavantage.co/) financial-data API), register it with the `env` pattern, and chain it with Day 1's servers
 
 You don't need to read or build anything in advance. Just complete the [Preflight](#preflight) checklist below before Day 1 starts.
 
@@ -21,6 +21,7 @@ Verify these on your laptop **before Day 1**. Everything else is done in the ses
 - [ ] You can run a simple Node script from your terminal
 - [ ] You have a writable folder to keep workshop projects in
 - [ ] **You've downloaded [`dad-jokes-mcp.zip`](./dad-jokes-mcp.zip) from this repo** (used on Day 1 — extract anywhere, **do not run npm**)
+- [ ] **Before Day 2: sign up for a free Alpha Vantage API key** at <https://www.alphavantage.co/support/#api-key> — instant form, key arrives by email in seconds. Doing this the night before saves time in the session.
 
 If any of these fails, fix it before Day 1 — we won't have time to troubleshoot installs in the session.
 
@@ -104,16 +105,15 @@ Restart Claude Code (approve the new server when prompted), then try:
 
 ---
 
-## Day 2 — Specs You Can Pick From
+## Day 2 — Vibe Coding the Alpha Vantage MCP
 
-Day 2's main exercise is **vibe coding** — you'll prompt Claude Code to build a small MCP server, then register and use it live.
+Day 2's main exercise is **vibe coding** — you'll prompt Claude Code to build a small MCP server, register it (with the `env` pattern for real-world API credentials), and use it live alongside Day 1's servers.
 
-Pick **one** of these specs going in (or change your mind on the day):
+**Spec:** [`day2-specs/alpha-vantage-mcp.md`](./day2-specs/alpha-vantage-mcp.md) — wraps the [Alpha Vantage](https://www.alphavantage.co/) financial-data API. Three tools: stock price, FX rate, company overview.
 
-- [`day2-specs/pick-A-dad-jokes.md`](./day2-specs/pick-A-dad-jokes.md) — calls an external API
-- [`day2-specs/pick-B-sticky-notes.md`](./day2-specs/pick-B-sticky-notes.md) — persistent state in a local JSON file
+**Before Day 2:** sign up for a **free** Alpha Vantage API key at <https://www.alphavantage.co/support/#api-key>. The form is instant, the key arrives by email within seconds. **Do this the night before** so we don't lose time to spam-folder hunts during the session.
 
-Both are time-boxed to ~30 minutes. Goal: **one working MCP per person**, not breadth.
+Total time-boxed to ~45–60 minutes for the build. Goal: **one working MCP per person**, end-to-end.
 
 ---
 
