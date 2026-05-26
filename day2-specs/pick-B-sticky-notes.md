@@ -42,7 +42,7 @@ Open Claude Code in an empty folder and paste this:
 
 Once it builds, ask Claude Code:
 
-> Help me register this MCP in my `.claude/settings.json`. Use the absolute path to `build/index.js`.
+> Help me register this MCP in the `.mcp.json` at my workshop folder root. Use the absolute path to `build/index.js`.
 
 The entry should look like:
 
@@ -50,6 +50,7 @@ The entry should look like:
 {
   "mcpServers": {
     "sticky-notes": {
+      "type": "stdio",
       "command": "node",
       "args": ["<absolute-path-to>/sticky-notes-mcp/build/index.js"]
     }
@@ -57,7 +58,7 @@ The entry should look like:
 }
 ```
 
-Then restart Claude Code.
+Then restart Claude Code (approve the new server when prompted).
 
 ## Test it
 

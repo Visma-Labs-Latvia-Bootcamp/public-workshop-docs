@@ -16,8 +16,8 @@ Verify these on your laptop **before Day 1**. Everything else is done in the ses
 - [ ] [Node.js](https://nodejs.org/) v18 or newer — check with `node --version`
 - [ ] `npm --version` and `npx --version` both work
 - [ ] [Claude Code](https://docs.anthropic.com/en/docs/claude-code) installed — check with `claude --version`
-- [ ] You know where Claude Code reads your local `.claude/settings.json`
-- [ ] You can restart Claude Code after editing settings
+- [ ] You know how to create a `.mcp.json` file in a folder and open Claude Code there
+- [ ] You can restart Claude Code after editing the config
 - [ ] You can run a simple Node script from your terminal
 - [ ] You have a writable folder to keep workshop projects in
 - [ ] **You've downloaded [`dad-jokes-mcp.zip`](./dad-jokes-mcp.zip) from this repo** (used on Day 1 — extract anywhere, **do not run npm**)
@@ -28,9 +28,13 @@ If any of these fails, fix it before Day 1 — we won't have time to troubleshoo
 
 ## Day 1 — Hands-On Snippets
 
-You'll add two MCP servers to your `.claude/settings.json` during Day 1. Both end up side-by-side. The snippets below are what you'll paste — you don't need to type them in advance.
+During Day 1 you'll create a project-scoped MCP config file called **`.mcp.json`** in a workshop folder and open Claude Code there. Both MCP servers (DeepWiki + Dad Jokes) end up in that same file side-by-side. The snippets below are what you'll paste — you don't need to type them in advance.
+
+> Pick (or create) any folder you want to be your "workshop folder", e.g. `C:\workshop\mcp-day1\` or `~/workshop/mcp-day1/`. `.mcp.json` goes in that folder's root. Claude Code will prompt you to approve the servers the first time you open the project.
 
 ### 1. Remote MCP — DeepWiki (just a URL)
+
+Create `.mcp.json` in your workshop folder with:
 
 ```json
 {
@@ -43,16 +47,16 @@ You'll add two MCP servers to your `.claude/settings.json` during Day 1. Both en
 }
 ```
 
-Restart Claude Code, then try:
+Restart Claude Code (and approve the server when prompted), then try:
 
 - *"Using deepwiki, summarize what the modelcontextprotocol/typescript-sdk repo does."*
 - *"Using deepwiki, what does the README of facebook/react say about strict mode?"*
 
 ### 2. Local MCP — Dad Jokes (pre-built — just a path)
 
-1. Extract [`dad-jokes-mcp.zip`](./dad-jokes-mcp.zip) anywhere on disk (e.g. `C:\Users\you\dad-jokes-mcp\` or `~/dad-jokes-mcp/`).
+1. Extract [`dad-jokes-mcp.zip`](./dad-jokes-mcp.zip) anywhere on disk (e.g. `C:\Users\you\dad-jokes-mcp\` or `~/dad-jokes-mcp/`). It does **not** need to live inside your workshop folder.
 2. Note the **absolute path** to `build/index.js` inside the extracted folder.
-3. Add `dad-jokes` to your `.claude/settings.json` alongside `deepwiki`:
+3. Add `dad-jokes` to the same `.mcp.json` you created above, alongside `deepwiki`:
 
 ```json
 {
@@ -62,8 +66,9 @@ Restart Claude Code, then try:
       "url": "https://mcp.deepwiki.com/mcp"
     },
     "dad-jokes": {
+      "type": "stdio",
       "command": "node",
-      "args": ["C:\\Users\\your-name\\dad-jokes-mcp\\build\\index.js"]
+      "args": ["C:/Users/your-name/dad-jokes-mcp/build/index.js"]
     }
   }
 }
@@ -72,7 +77,7 @@ Restart Claude Code, then try:
 - macOS / Linux path example: `/Users/your-name/dad-jokes-mcp/build/index.js`
 - On Windows, use **forward slashes** or **double-backslashes** in JSON paths.
 
-Restart Claude Code, then try:
+Restart Claude Code (approve the new server when prompted), then try:
 
 - *"Tell me a dad joke."*
 - *"Find me a joke about coffee."*
