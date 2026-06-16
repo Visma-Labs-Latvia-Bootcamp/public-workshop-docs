@@ -49,8 +49,8 @@ You won't hand-write any of these — you ask Claude in plain English and it cre
    - ✅ Done when v1.0 folds in the agreed needs, leaves out the noise, and has a dated change-log entry — *and you reviewed the plan before letting it write anything.*
 
 ## What you need
-- [`transaction-list-requirements.md`](./transaction-list-requirements.md) — the starting (v0.1) requirements document.
-- [`requirement-review-meeting-transcript.md`](./requirement-review-meeting-transcript.md) — the customer review transcript.
+- [`materials/transaction-list-requirements.md`](./materials/transaction-list-requirements.md) — the starting (v0.1) requirements document.
+- [`materials/requirement-review-meeting-transcript.md`](./materials/requirement-review-meeting-transcript.md) — the customer review transcript.
 - A short **review checklist** for step 6 — your facilitator hands this out *during* the review. It's deliberately not in this repo, so it doesn't give away what to look for ahead of time.
 
 Copy the two files above into your project folder before you start step 6.

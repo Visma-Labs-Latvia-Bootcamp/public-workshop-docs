@@ -31,6 +31,7 @@ By the end of this part you'll have Claude **turn any raw meeting transcript int
 4. **Get a live result** — with a calendar connected, ask:
    > "Give me a brief of my day — all my meetings today, laid out so I can see what's coming."
    - ✅ Done when you get an interactive day view you can click into (not a flat text list).
+   - **No calendar connector?** Use the optional [`project-docs/`](./project-docs/) sample project instead and ask for an *interactive chart* of real data — e.g. *"chart page-load time against employee count from the performance logs"* — so you still see a live, interactive result.
 
 5. **Schedule it** — set the brief to run each morning:
    > "Every weekday at 8am, prepare a brief of my day's meetings and have it ready for me."
@@ -46,5 +47,6 @@ By the end of this part you'll have Claude **turn any raw meeting transcript int
 ## What you need
 - [`team-sync-transcript.md`](./team-sync-transcript.md) — a short sample transcript to test your new skill.
 - A calendar — a **sample** one on the shared screen — for the live-result and scheduling steps. *(Connectors and scheduling may be admin-gated; if they're not enabled for you, you'll follow along.)*
+- *(Optional)* [`project-docs/`](./project-docs/) — **Project Aurora**, a richer sample project (a payroll UI-refresh with a stakeholder brief, ~55 rows of customer feedback, a UX audit, user personas, a kickoff deck, and five days of performance logs). Use it as the data behind an interactive chart in step 4 if you don't have a calendar connector — or explore it as a fuller example of a *furnished* project Claude can reason across.
 
 > **Heads-up:** steps 4 and 5 depend on a connector being available to you. The capstone (step 6) always has a connector-free option — your meeting-notes skill on your own transcript — so everyone builds something real.

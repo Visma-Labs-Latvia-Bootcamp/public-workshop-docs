@@ -1,0 +1,37 @@
+# Visma Payroll - web performance log (page_load events)
+# environment=production  service=payroll-web  region=eu-north-1
+# date=2026-02-23 (Mon)  source=perf-monitor v2.3
+# NOTE: page loads over 2500 ms are recorded at WARN and tagged SLOW.
+# fields: timestamp  level  logger  cust  custId  employees  screen  rows  dbMs  renderMs  queueMs  totalMs  [SLOW]
+2026-02-23 07:58:32  INFO  perf.page_load  cust="Nordlys Hotell AS" custId=C-1006 employees=85 screen=transaction-list rows=242 dbMs=209 renderMs=753 queueMs=84 totalMs=1046
+2026-02-23 08:21:26  WARN  perf.page_load  cust="Trondheim Tekstil AS" custId=C-1015 employees=420 screen=transaction-list rows=1217 dbMs=1283 renderMs=4620 queueMs=514 totalMs=6417  SLOW threshold=2500ms
+2026-02-23 09:08:30  WARN  perf.page_load  cust="Trondheim Tekstil AS" custId=C-1015 employees=420 screen=reports rows=393 dbMs=859 renderMs=3093 queueMs=344 totalMs=4296  SLOW threshold=2500ms
+2026-02-23 09:13:42  WARN  perf.page_load  cust="Nordvik Logistics AS" custId=C-1018 employees=2600 screen=transaction-list rows=6487 dbMs=6324 renderMs=22768 queueMs=2530 totalMs=31622  SLOW threshold=2500ms
+2026-02-23 09:20:40  INFO  perf.page_load  cust="Hamar Mekaniske Verksted" custId=C-1008 employees=110 screen=transaction-list rows=312 dbMs=494 renderMs=1778 queueMs=198 totalMs=2470
+2026-02-23 09:23:37  WARN  perf.page_load  cust="Kystfisk AS" custId=C-1013 employees=240 screen=reports rows=244 dbMs=663 renderMs=2386 queueMs=265 totalMs=3314  SLOW threshold=2500ms
+2026-02-23 09:42:10  WARN  perf.page_load  cust="Lindqvist Bygg AS" custId=C-1010 employees=150 screen=transaction-list rows=413 dbMs=600 renderMs=2159 queueMs=239 totalMs=2998  SLOW threshold=2500ms
+2026-02-23 09:45:32  INFO  perf.page_load  cust="Fjell og Fjord Reiser AS" custId=C-1005 employees=75 screen=transaction-list rows=186 dbMs=191 renderMs=688 queueMs=76 totalMs=955
+2026-02-23 10:21:59  WARN  perf.page_load  cust="Trondheim Tekstil AS" custId=C-1015 employees=420 screen=transaction-list rows=1027 dbMs=1316 renderMs=4738 queueMs=527 totalMs=6581  SLOW threshold=2500ms
+2026-02-23 10:29:54  WARN  perf.page_load  cust="Lindqvist Bygg AS" custId=C-1010 employees=150 screen=transaction-list rows=364 dbMs=673 renderMs=2424 queueMs=269 totalMs=3366  SLOW threshold=2500ms
+2026-02-23 11:17:56  WARN  perf.page_load  cust="Saga Industri AS" custId=C-1017 employees=1400 screen=transaction-list rows=3939 dbMs=3273 renderMs=11784 queueMs=1309 totalMs=16366  SLOW threshold=2500ms
+2026-02-23 11:18:26  WARN  perf.page_load  cust="Kystfisk AS" custId=C-1013 employees=240 screen=transaction-list rows=581 dbMs=859 renderMs=3091 queueMs=343 totalMs=4293  SLOW threshold=2500ms
+2026-02-23 12:07:39  INFO  perf.page_load  cust="Sorland Frukt AS" custId=C-1009 employees=130 screen=employee-register rows=130 dbMs=326 renderMs=1173 queueMs=130 totalMs=1629
+2026-02-23 12:17:43  INFO  perf.page_load  cust="Bergen Bakeri AS" custId=C-1001 employees=45 screen=payroll-run rows=109 dbMs=120 renderMs=431 queueMs=48 totalMs=599
+2026-02-23 12:51:41  WARN  perf.page_load  cust="Vestland Kommune" custId=C-1019 employees=3200 screen=dashboard rows=11 dbMs=2327 renderMs=8379 queueMs=931 totalMs=11637  SLOW threshold=2500ms
+2026-02-23 13:02:33  WARN  perf.page_load  cust="Vestland Kommune" custId=C-1019 employees=3200 screen=transaction-list rows=7740 dbMs=6498 renderMs=23394 queueMs=2600 totalMs=32492  SLOW threshold=2500ms
+2026-02-23 13:07:57  INFO  perf.page_load  cust="Midthaug Regnskap AS" custId=C-1002 employees=55 screen=transaction-list rows=155 dbMs=163 renderMs=588 queueMs=66 totalMs=817
+2026-02-23 13:34:32  WARN  perf.page_load  cust="Tromso Sjomat AS" custId=C-1012 employees=210 screen=transaction-list rows=551 dbMs=768 renderMs=2764 queueMs=307 totalMs=3839  SLOW threshold=2500ms
+2026-02-23 13:39:58  INFO  perf.page_load  cust="Polar Data AS" custId=C-1007 employees=95 screen=reports rows=100 dbMs=206 renderMs=740 queueMs=82 totalMs=1028
+2026-02-23 13:49:01  INFO  perf.page_load  cust="Aurora Renhold AS" custId=C-1003 employees=60 screen=transaction-list rows=155 dbMs=165 renderMs=595 queueMs=66 totalMs=826
+2026-02-23 13:52:00  INFO  perf.page_load  cust="Bergen Bakeri AS" custId=C-1001 employees=45 screen=transaction-list rows=117 dbMs=157 renderMs=566 queueMs=63 totalMs=786
+2026-02-23 14:47:45  WARN  perf.page_load  cust="Nordvik Logistics AS" custId=C-1018 employees=2600 screen=transaction-list rows=7343 dbMs=5646 renderMs=20327 queueMs=2259 totalMs=28232  SLOW threshold=2500ms
+2026-02-23 15:39:32  INFO  perf.page_load  cust="Nordlys Hotell AS" custId=C-1006 employees=85 screen=payroll-run rows=237 dbMs=146 renderMs=526 queueMs=58 totalMs=730
+2026-02-23 15:46:07  WARN  perf.page_load  cust="Fjord Transport AS" custId=C-1016 employees=850 screen=transaction-list rows=2262 dbMs=2119 renderMs=7628 queueMs=847 totalMs=10594  SLOW threshold=2500ms
+2026-02-23 15:53:39  INFO  perf.page_load  cust="Granitt Eiendom AS" custId=C-1004 employees=70 screen=transaction-list rows=187 dbMs=192 renderMs=692 queueMs=77 totalMs=961
+2026-02-23 16:10:41  WARN  perf.page_load  cust="Solberg Transport AS" custId=C-1014 employees=320 screen=transaction-list rows=917 dbMs=1027 renderMs=3696 queueMs=411 totalMs=5134  SLOW threshold=2500ms
+2026-02-23 16:18:10  WARN  perf.page_load  cust="Hamar Mekaniske Verksted" custId=C-1008 employees=110 screen=transaction-list rows=286 dbMs=527 renderMs=1896 queueMs=210 totalMs=2633  SLOW threshold=2500ms
+2026-02-23 16:43:54  INFO  perf.page_load  cust="Polar Data AS" custId=C-1007 employees=95 screen=transaction-list rows=261 dbMs=246 renderMs=886 queueMs=99 totalMs=1231
+2026-02-23 16:50:57  WARN  perf.page_load  cust="Sorland Frukt AS" custId=C-1009 employees=130 screen=transaction-list rows=364 dbMs=616 renderMs=2218 queueMs=246 totalMs=3080  SLOW threshold=2500ms
+2026-02-23 17:02:54  WARN  perf.page_load  cust="Oslo Helsesenter" custId=C-1011 employees=180 screen=transaction-list rows=487 dbMs=746 renderMs=2686 queueMs=299 totalMs=3731  SLOW threshold=2500ms
+2026-02-23 17:12:04  INFO  perf.page_load  cust="Bergen Bakeri AS" custId=C-1001 employees=45 screen=transaction-list rows=110 dbMs=160 renderMs=576 queueMs=64 totalMs=800
+2026-02-23 17:20:24  WARN  perf.page_load  cust="Fjord Transport AS" custId=C-1016 employees=850 screen=transaction-list rows=2221 dbMs=2098 renderMs=7553 queueMs=839 totalMs=10490  SLOW threshold=2500ms
