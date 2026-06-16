@@ -44,7 +44,7 @@ By the end of this part you'll have Claude **turn any raw meeting transcript int
    - ✅ Done when you produced one real, useful result that used **two or more** things you learned today — and *you* assembled the flow.
 
 ## What you need
-- `team-sync-transcript.md` — a short sample transcript to test your new skill.
+- [`team-sync-transcript.md`](./team-sync-transcript.md) — a short sample transcript to test your new skill.
 - A calendar — a **sample** one on the shared screen — for the live-result and scheduling steps. *(Connectors and scheduling may be admin-gated; if they're not enabled for you, you'll follow along.)*
 
 > **Heads-up:** steps 4 and 5 depend on a connector being available to you. The capstone (step 6) always has a connector-free option — your meeting-notes skill on your own transcript — so everyone builds something real.

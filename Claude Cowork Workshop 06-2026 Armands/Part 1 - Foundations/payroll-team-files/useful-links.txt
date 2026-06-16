@@ -1,0 +1,5 @@
+Useful links
+Visma UX guidelines: https://ux.visma.com/
+GAIA Angular skill: https://mcpmarket.com/tools/skills/ngx-gaia-for-angular
+Internal wiki - payroll product (placeholder)
+Jira board - Aurora (placeholder)

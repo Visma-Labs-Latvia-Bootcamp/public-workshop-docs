@@ -1,0 +1,50 @@
+%PDF-1.4
+1 0 obj
+<</Type /Catalog /Pages 2 0 R>>
+endobj
+2 0 obj
+<</Type /Pages /Kids [3 0 R] /Count 1>>
+endobj
+3 0 obj
+<</Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources <</Font <</F1 5 0 R>>>> /Contents 4 0 R>>
+endobj
+4 0 obj
+<</Length 369>>
+stream
+BT
+/F1 14 Tf
+72 740 Td
+16 TL
+(DATA HANDLING POLICY \(extract\)) Tj
+T*
+(1. Personal payroll data is stored only in approved systems.) Tj
+T*
+(2. Access is limited to authorised payroll staff.) Tj
+T*
+(3. Retention: 5 years per statutory requirement.) Tj
+T*
+(4. Report suspected breaches within 24 hours.) Tj
+T*
+() Tj
+T*
+(Fictional demo policy - not legal advice.) Tj
+T*
+ET
+endstream
+endobj
+5 0 obj
+<</Type /Font /Subtype /Type1 /BaseFont /Helvetica>>
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000056 00000 n 
+0000000111 00000 n 
+0000000231 00000 n 
+0000000649 00000 n 
+trailer
+<</Size 6 /Root 1 0 R>>
+startxref
+717
+%%EOF

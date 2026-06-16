@@ -45,4 +45,4 @@ By the end of this part you'll have **Claude do a real, fiddly file job for you*
    - ✅ Done when you wrote the prompt yourself (not copied) and got a sensible result.
 
 ## What you need
-- The **demo folder** of mixed files (PDFs, spreadsheets, images, documents…) that your facilitator shares — copy it somewhere local before the session.
+- The messy demo folder is included here: [`payroll-team-files/`](./payroll-team-files/) — 18 mixed files (PDFs, spreadsheets, images, documents, and more). **Download or copy the whole folder to your own machine** (e.g. your Desktop) before the session, so Claude reorganises *your* copy.

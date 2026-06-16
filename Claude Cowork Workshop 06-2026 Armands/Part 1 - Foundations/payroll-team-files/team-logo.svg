@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="80" viewBox="0 0 240 80">
+  <rect width="240" height="80" rx="10" fill="#1c3c6e"/>
+  <circle cx="44" cy="40" r="22" fill="#37c2a8"/>
+  <text x="80" y="48" font-family="Arial" font-size="26" fill="#ffffff">Aurora</text>
+</svg>

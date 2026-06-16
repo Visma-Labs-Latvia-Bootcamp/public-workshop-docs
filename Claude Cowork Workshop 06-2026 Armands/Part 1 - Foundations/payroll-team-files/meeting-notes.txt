@@ -1,0 +1,7 @@
+Quick notes - call with payroll customer
+----------------------------------------
+- legacy grid too wide, they scroll a lot
+- status colours please
+- want to filter by cost center too
+- 'just give me my numbers' said three times
+- follow up: send them the prototype link
