@@ -21,10 +21,10 @@ By the end of this part you'll have Claude **turn any raw meeting transcript int
 
 1. **Find your skills** — open **Customize → Skills**, see the built-in ones, and notice the on/off toggles (you decide what Claude is allowed to reach for).
 
-2. **Create a skill together** — build a *"Structure meeting notes"* skill with the built-in skill-creator. It asks what the skill should do; you answer in plain language. Then **make it yours**: type one refinement in your own words, e.g.
-   > "Also capture who raised each open question."
-   Test it by pasting a transcript and asking for notes.
-   - ✅ Done when the skill appears under **Customize → Skills**, a pasted transcript comes back in the structured format, **and** you made one change in your own words.
+2. **Create a skill together** — build a *"Structure meeting notes"* skill with the built-in skill-creator. It asks what the skill should do; you answer in plain language. Then:
+   - **Test it:** paste `team-sync-transcript.md` and just ask for meeting notes — *without* naming the skill. Claude recognises that your request matches the skill and applies it on its own (that's the whole point of a skill).
+   - **Make it yours:** ask to update the skill in your own words — e.g. *"also capture who raised each open question"* — and re-run to see the change.
+   - ✅ Done when the skill appears under **Customize → Skills**, a pasted transcript comes back in the structured format, **and** you changed the skill in your own words.
 
 3. *(If time)* **Browse the plugins marketplace** — see how a bundle packages several capabilities at once.
 
